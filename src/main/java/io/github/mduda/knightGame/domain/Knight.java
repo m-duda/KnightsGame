@@ -1,19 +1,32 @@
 package io.github.mduda.knightGame.domain;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
 public class Knight {
-    private String name;
-    private int age;
+    private String name = "Lancelot";
+    private int age = 29;
+
     private Quest quest;
 
 
-    public Knight(String name, int age, Quest quest) {
+    public Knight(String name, int age/*, Quest quest*/) {
         this.name = name;
         this.age = age;
+//        this.quest = quest;
+    }
+
+    public Knight() {
+    }
+
+    @Autowired
+    public void setQuest(Quest quest) {
         this.quest = quest;
     }
 
     @Override
     public String toString() {
-        return "Rycerz o imieniu "+ name + "("+age+") i ma za zadanie " + quest.toString() + ".";
+        return "Rycerz o imieniu "+ name + "("+age+"). Ma za zadanie " + quest.toString() + ".";
     }
 }
