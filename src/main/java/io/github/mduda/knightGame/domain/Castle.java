@@ -30,4 +30,8 @@ public class Castle {
         System.out.println("Wyburzono zamek " + name + ".");
     }
 
+    @Override
+    public String toString() {
+        return "Znajduje się tu zamek "+ name +  ", przebywa w nim rycerz " + knight;
+    }
 }
