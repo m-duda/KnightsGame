@@ -1,10 +1,13 @@
 package io.github.mduda.knightGame.domain;
 
-public class Quest {
-    private String description;
+import org.springframework.stereotype.Component;
 
-    public Quest(String description) {
-        this.description = description;
+@Component
+public class Quest {
+    private String description = "zabij smoka";
+
+    public Quest() {
+
     }
 
     @Override
