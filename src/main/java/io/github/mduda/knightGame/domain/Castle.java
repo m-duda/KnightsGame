@@ -32,6 +32,6 @@ public class Castle {
 
     @Override
     public String toString() {
-        return "Znajduje się tu zamek "+ name +  ", przebywa w nim rycerz " + knight;
+        return "Znajduje się tu zamek "+ name +  ", przebywa w nim rycerz o imieniu " + knight;
     }
 }
