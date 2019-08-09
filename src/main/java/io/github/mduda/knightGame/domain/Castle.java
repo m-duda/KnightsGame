@@ -20,6 +20,11 @@ public class Castle {
     public Castle() {
     }
 
+    Castle (Knight knight, String name) {
+        this.knight = knight;
+        this.name = name;
+    }
+
     @PostConstruct
     public void build (){
         System.out.println("Wybudowano zamek "+ name + ".");
