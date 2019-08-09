@@ -27,6 +27,6 @@ public class Knight {
 
     @Override
     public String toString() {
-        return "Rycerz o imieniu "+ name + "("+age+"). Ma za zadanie " + quest.toString() + ".";
+        return name + "("+age+"). Ma za zadanie " + quest + ".";
     }
 }
