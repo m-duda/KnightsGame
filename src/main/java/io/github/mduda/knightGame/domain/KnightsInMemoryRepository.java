@@ -25,7 +25,7 @@ public class KnightsInMemoryRepository {
         this.castleName = name;
     }
 
-    public void createKniht (String name, int age){
+    public void createKnight (String name, int age){
         knights.put(name, new Knight(name, age));
     }
 
@@ -49,12 +49,12 @@ public class KnightsInMemoryRepository {
 
     @PostConstruct
     public void build (){
-        createKniht("Lancelot", 29);
-        createKniht("Percival", 31);
+        createKnight("Lancelot", 29);
+        createKnight("Percival", 31);
     }
 
     @Override
     public String toString() {
-        return "Znajduje się tu zamek "+ name +  ".";
+        return "Znajduje się tu zamek "+ castleName +  ".";
     }
 }
