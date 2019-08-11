@@ -14,14 +14,11 @@ public class Castle {
     @Value("${my.castle.name:Czarny Zamek}")
     private String name;
 
-    @Autowired
-    Knight knight;
 
     public Castle() {
     }
 
-    Castle (Knight knight, String name) {
-        this.knight = knight;
+    Castle (String name) {
         this.name = name;
     }
 
@@ -37,6 +34,6 @@ public class Castle {
 
     @Override
     public String toString() {
-        return "Znajduje się tu zamek "+ name +  ", przebywa w nim rycerz o imieniu " + knight;
+        return "Znajduje się tu zamek "+ name +  ".";
     }
 }
