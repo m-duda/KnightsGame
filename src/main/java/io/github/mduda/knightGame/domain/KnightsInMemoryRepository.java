@@ -12,7 +12,7 @@ import java.util.Map;
 @Component
 @PropertySource("classpath:castle.properties")
 public class KnightsInMemoryRepository {
-    
+
     @Value("${my.castle.name:Czarny Zamek}")
     private String castleName;
 
@@ -55,6 +55,9 @@ public class KnightsInMemoryRepository {
 
     @Override
     public String toString() {
-        return "Znajduje się tu zamek "+ castleName +  ".";
+        return "KnightsInMemoryRepository{" +
+                "castleName='" + castleName + '\'' +
+                ", knights=" + knights +
+                '}';
     }
 }
