@@ -2,14 +2,14 @@ package io.github.mduda.knightGame.domain;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.PropertySource;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
 import javax.annotation.PostConstruct;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
-@Component
+@Repository
 @PropertySource("classpath:castle.properties")
 public class KnightsInMemoryRepository {
 
